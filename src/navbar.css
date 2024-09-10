@@ -1,0 +1,93 @@
+/* General Styles for the Navigation Bar */
+.nav-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo, nav items, and cart button */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Padding around the container */
+    background-color: #333; /* Background color for the navbar */
+    color: #fff; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixed to top */
+    width: 100%; /* Full width */
+    top: 0; /* Stays at the top */
+    z-index: 1000; /* Higher z-index to be above other content */
+  }
+  
+  /* Logo Styling */
+  .nav-logo a {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold logo text */
+    color: #fff; /* Logo text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Navigation Items */
+  .nav-items ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flex layout for items */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Navigation Links */
+  .nav-items ul li {
+    margin: 0 15px; /* Space between links */
+  }
+  
+  .nav-items ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link text color */
+    font-size: 18px; /* Font size for links */
+    transition: color 0.3s; /* Smooth color transition */
+    padding: 5px 10px; /* Padding for clickable area */
+  }
+  
+  .nav-items ul li a:hover {
+    color: #ff5733; /* Change color on hover */
+  }
+  
+  /* Add to Cart Button */
+  .cart .addcart {
+    background-color: #ff5733; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover transition */
+    margin-right: 3rem;
+  }
+  
+  .cart .addcart:hover {
+    background-color: #e74c3c; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align to start */
+      padding: 10px 20px; /* Smaller padding */
+    }
+  
+    .nav-items ul {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Full width for links */
+    }
+  
+    .nav-items ul li {
+      margin: 10px 0; /* Vertical spacing between links */
+    }
+  
+    .cart {
+      margin-top: 15px; /* Spacing for cart button */
+      width: 100%; /* Full width for button */
+    }
+  
+    .cart .addcart {
+      width: 100%; /* Full width for responsive button */
+      text-align: center; /* Center button text */
+    }
+  }
+  
